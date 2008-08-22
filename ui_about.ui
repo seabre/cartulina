@@ -1,0 +1,167 @@
+<ui version="4.0" >
+ <class>cartulinaabout</class>
+ <widget class="QDialog" name="cartulinaabout" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>521</width>
+    <height>346</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>521</width>
+    <height>346</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>About Cartulina</string>
+  </property>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>23</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Cartulina</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>200</y>
+     <width>311</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text" >
+    <string>This program is free software under the GPL version 3. See included GPL3.txt or at http://www.gnu.org/licenses/gpl-3.0.txt</string>
+   </property>
+   <property name="wordWrap" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4" >
+   <property name="geometry" >
+    <rect>
+     <x>370</x>
+     <y>220</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+   <property name="pixmap" >
+    <pixmap>gplv3-127x51.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>211</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+   <property name="pixmap" >
+    <pixmap>me.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>241</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Problems? Bugs? Contact the author at seabre@catt.com or visit http://seabre986.googlepages.com for program updates.</string>
+   </property>
+   <property name="wordWrap" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>81</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>release 1.0</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>300</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="standardButtons" >
+    <set>QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>cartulinaabout</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>220</x>
+     <y>315</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>231</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,229 @@
+<ui version="4.0" >
+ <class>cartulinamain</class>
+ <widget class="QMainWindow" name="cartulinamain" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>312</width>
+    <height>304</height>
+   </size>
+  </property>
+  <property name="font" >
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle" >
+   <string>Cartulina</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>../.designer/Desktop/fsicon.jpg</normaloff>../.designer/Desktop/fsicon.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QVBoxLayout" name="verticalLayout_2" >
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" >
+      <item>
+       <widget class="QLabel" name="wordlabel" >
+        <property name="enabled" >
+         <bool>true</bool>
+        </property>
+        <property name="font" >
+         <font>
+          <pointsize>34</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth" >
+         <number>1</number>
+        </property>
+        <property name="text" >
+         <string>Cartulina</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignHCenter|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="definitionlabel" >
+        <property name="text" >
+         <string>A program to simulate a deck of flashcards</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" >
+        <item>
+         <widget class="QPushButton" name="leftpush" >
+          <property name="text" >
+           <string>&lt;</string>
+          </property>
+          <property name="shortcut" >
+           <string>Left</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="statuslabel" >
+          <property name="text" >
+           <string>0 of 0</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="rightpush" >
+          <property name="text" >
+           <string>></string>
+          </property>
+          <property name="shortcut" >
+           <string>Right</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>312</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <addaction name="actionopen" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>Help</string>
+    </property>
+    <widget class="QMenu" name="menuCartulina_Help" >
+     <property name="title" >
+      <string>Cartulina Info</string>
+     </property>
+     <addaction name="actionhelp" />
+     <addaction name="actionabout" />
+    </widget>
+    <addaction name="menuCartulina_Help" />
+   </widget>
+   <widget class="QMenu" name="menuOptions" >
+    <property name="title" >
+     <string>Options</string>
+    </property>
+    <addaction name="actionhideword" />
+    <addaction name="actionhidedefinition" />
+    <addaction name="separator" />
+    <addaction name="actionchangewordfont" />
+    <addaction name="actionchangedefinitionfont" />
+    <addaction name="separator" />
+    <addaction name="actionshuffledeck" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuOptions" />
+   <addaction name="menuHelp" />
+  </widget>
+  <action name="actionopen" >
+   <property name="text" >
+    <string>Open</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionhelp" >
+   <property name="text" >
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionabout" >
+   <property name="text" >
+    <string>About Cartulina</string>
+   </property>
+  </action>
+  <action name="actionhideword" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Hide Word</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionhidedefinition" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Hide Definition</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionchangewordfont" >
+   <property name="text" >
+    <string>Change Word Font</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionchangedefinitionfont" >
+   <property name="text" >
+    <string>Change Definition Font</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionshuffledeck" >
+   <property name="text" >
+    <string>Shuffle Deck</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
